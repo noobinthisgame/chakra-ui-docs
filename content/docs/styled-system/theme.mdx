@@ -46,7 +46,7 @@ export default {
 ```
 
 Chakra provides a sensible
-[default theme](https://github.com/chakra-ui/chakra-ui/tree/main/packages/theme)
+[default theme](https://github.com/chakra-ui/chakra-ui/tree/main/packages/components/theme)
 inspired by Tailwind CSS, but you can customize it to fit your design.
 
 ### Black & White
@@ -360,7 +360,7 @@ width set to `1rem` or `16px` and height set to `0.75rem` or `12px`.
 
 ## Border radius
 
-Chakra provides a set of smooth corner radius values.
+Chakra provides a set of smooth corner radius values defined by the `radii` key.
 
 ```js
 import { extendTheme } from '@chakra-ui/react'
@@ -379,7 +379,7 @@ const borderRadius = {
   },
 }
 
-const theme = extendTheme({ borderRadius, ...})
+const theme = extendTheme({ ...borderRadius, ...})
 ```
 
 ## z-index values

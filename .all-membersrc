@@ -46,7 +46,7 @@
       "url": "https://github.com/estheragbaje",
       "blog": "https://estheragbaje.dev/",
       "name": "Esther Agbaje",
-      "bio": "Developer Advocate | Technical Writer",
+      "bio": "Developer Relations Engineer",
       "twitter_username": "_estheragbaje",
       "location": "UAE"
     },
@@ -66,7 +66,7 @@
       "url": "https://github.com/nikolovlazar",
       "blog": "https://nikolovlazar.com",
       "name": "Lazar Nikolov",
-      "bio": "Developer, designer, course creator. Works @codechem. Core & DevRel at @chakra-ui. Instructor @eggheadio. Streaming on twitch.tv/nikolovlazar. OSS Advocate 🥑",
+      "bio": "Developer Advocate @getsentry.\r\nCore @chakra-ui.\r\nInstructor @eggheadio.\r\nSWE, content creator, OSS Advocate.",
       "twitter_username": "NikolovLazar",
       "location": "Skopje, North Macedonia"
     },
@@ -86,19 +86,9 @@
       "url": "https://github.com/peoray",
       "blog": "https://peoray.dev",
       "name": "Emmanuel Raymond",
-      "bio": "Full-stack software engineer. I love OSS",
+      "bio": "Software Engineer. Open source, Music & Nature lover.",
       "twitter_username": "peoray_",
       "location": "Remote"
-    },
-    {
-      "login": "takethefake",
-      "avatar_url": "https://avatars.githubusercontent.com/u/3123354?v=4",
-      "url": "https://github.com/takethefake",
-      "blog": "http://schulz.codes",
-      "name": "Daniel Schulz",
-      "bio": "DevOps Engineer at DB Systel",
-      "twitter_username": "takethefake",
-      "location": "Germany"
     },
     {
       "login": "TimKolberger",
@@ -108,17 +98,7 @@
       "name": "Tim Kolberger",
       "bio": "DevOps Engineer at DB Systel | maintainer @chakra-ui |\r\n[React, nodeJS, GraphQL, ...❤️]",
       "twitter_username": "TimKolberger",
-      "location": "Darmstadt, Germany"
-    },
-    {
-      "login": "TylerAPfledderer",
-      "avatar_url": "https://avatars.githubusercontent.com/u/65234762?v=4",
-      "url": "https://github.com/TylerAPfledderer",
-      "blog": "https://tylerpweb.dev",
-      "name": "Tyler Pfledderer",
-      "bio": "UI/UX Junior Web Developer | Collaborater at @chakra-ui ",
-      "twitter_username": "t_pfledderer",
-      "location": "North Carolina, USA"
+      "location": "Wiesbaden, Germany"
     }
   ]
 }

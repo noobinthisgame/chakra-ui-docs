@@ -1314,6 +1314,51 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "LFerronato",
+      "name": "Lucas Ferronato",
+      "avatar_url": "https://avatars.githubusercontent.com/u/43012047?v=4",
+      "profile": "https://www.linkedin.com/in/lucasferronato",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "KolbySisk",
+      "name": "Kolby Sisk",
+      "avatar_url": "https://avatars.githubusercontent.com/u/1395078?v=4",
+      "profile": "http://kolbysisk.com",
+      "contributions": [
+        "bug"
+      ]
+    },
+    {
+      "login": "theskinnycoder",
+      "name": "Rahul SriRam",
+      "avatar_url": "https://avatars.githubusercontent.com/u/64031854?v=4",
+      "profile": "https://theskinnycoder.me",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "aashutoshrathi",
+      "name": "Aashutosh Rathi",
+      "avatar_url": "https://avatars.githubusercontent.com/u/21199234?v=4",
+      "profile": "http://aashutosh.dev",
+      "contributions": [
+        "bug"
+      ]
+    },
+    {
+      "login": "sitogi",
+      "name": "sitogi",
+      "avatar_url": "https://avatars.githubusercontent.com/u/20895397?v=4",
+      "profile": "https://github.com/sitogi",
+      "contributions": [
+        "bug"
+      ]
     }
   ],
   "contributorsPerLine": 7,

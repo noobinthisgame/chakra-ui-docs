@@ -10,6 +10,7 @@ import SEO from 'components/seo'
 import TableOfContent from 'components/table-of-content'
 import { convertBackticksToInlineCode } from 'utils/convert-backticks-to-inline-code'
 import { t } from 'utils/i18n'
+import { FrontmatterHeading } from 'src/types/frontmatter'
 
 function useHeadingFocusOnRouteChange() {
   const router = useRouter()
@@ -26,12 +27,6 @@ function useHeadingFocusOnRouteChange() {
   }, [router.events])
 }
 
-export interface Heading {
-  level: 'h2' | 'h3'
-  text: string
-  id: string
-}
-
 interface PageContainerProps {
   frontmatter: {
     slug?: string
@@ -39,12 +34,13 @@ interface PageContainerProps {
     description?: string
     editUrl?: string
     version?: string
-    headings?: Heading[]
+    headings?: FrontmatterHeading[]
   }
   hideToc?: boolean
   maxWidth?: string
   children: React.ReactNode
-  sidebar?: React.ReactElement
+  leftSidebar?: React.ReactElement
+  rightSidebar?: React.ReactElement
   pagination?: React.ReactElement
 }
 
@@ -52,7 +48,8 @@ function PageContainer(props: PageContainerProps) {
   const {
     frontmatter,
     children,
-    sidebar,
+    leftSidebar,
+    rightSidebar,
     pagination,
     hideToc,
     maxWidth = '48rem',
@@ -74,7 +71,7 @@ function PageContainer(props: PageContainerProps) {
       <Header />
       <Box as='main' className='main-content' w='full' maxW='8xl' mx='auto'>
         <Box display={{ md: 'flex' }}>
-          {sidebar || null}
+          {leftSidebar || null}
           <Box flex='1' minW='0'>
             <SkipNavContent />
             <Box id='content' px={5} mx='auto' minH='76vh'>
@@ -110,6 +107,7 @@ function PageContainer(props: PageContainerProps) {
                     headings={headings}
                   />
                 )}
+                {rightSidebar}
               </Flex>
             </Box>
           </Box>
