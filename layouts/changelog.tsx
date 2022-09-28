@@ -14,7 +14,7 @@ import { List, ListItem } from '@chakra-ui/react'
 import SidebarLink from 'components/sidebar/sidebar-link'
 import { allChangelogs } from 'contentlayer/generated'
 import TocNav from 'components/toc-nav'
-import { t } from 'utils/i18n'
+import useTranslation from 'next-translate/useTranslation'
 
 export function getRoutes(slug: string): RouteItem[] {
   // for home page, use docs sidebar
@@ -58,6 +58,8 @@ interface MDXLayoutProps {
 
 export default function MDXLayout(props: MDXLayoutProps) {
   const { frontmatter, children, maxWidth } = props
+
+  const { t } = useTranslation()
 
   const routes = getRoutes(frontmatter.slug)
   const versions = getVersions()

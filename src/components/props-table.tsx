@@ -6,7 +6,8 @@ import * as React from 'react'
 import { Anchor } from 'components/mdx-components/anchor'
 import { InlineCode } from 'components/mdx-components/inline-code'
 import { convertBackticksToInlineCode } from 'utils/convert-backticks-to-inline-code'
-import { t } from 'utils/i18n'
+import useTranslation from 'next-translate/useTranslation'
+import { Translate } from 'next-translate'
 
 /**
  * A map of components that use foreign theme key.
@@ -38,9 +39,11 @@ const PropsTable = ({
   omit = ['layerStyle', 'noOfLines', 'textStyle', 'orientation', 'styleConfig'],
   only,
 }: PropsTableProps) => {
+  const { t } = useTranslation()
+
   const propList = React.useMemo(
-    () => makePropsTable({ of, omit, only }),
-    [of, omit, only],
+    () => makePropsTable({ of, omit, only }, t),
+    [of, omit, only, t],
   )
 
   if (!propList.length) {
@@ -168,7 +171,10 @@ function isColorScheme(value: unknown): value is Record<string, string> {
 
 type MakePropsTableOptions = PropsTableProps
 
-function makePropsTable({ of, omit, only }: MakePropsTableOptions) {
+function makePropsTable(
+  { of, omit, only }: MakePropsTableOptions,
+  t: Translate,
+) {
   const props = ComponentProps[of]?.props
 
   const themeKey = themeComponentKeyAliases[of] ?? of

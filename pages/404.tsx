@@ -5,9 +5,12 @@ import { FaHome } from 'react-icons/fa'
 import { AdBanner } from 'components/chakra-pro/ad-banner'
 import Header from 'components/header'
 import SEO from 'components/seo'
-import { t } from 'utils/i18n'
+import useTranslation from 'next-translate/useTranslation'
+import Router, { useRouter } from 'next/router'
 
 const NotFoundPage = () => {
+  const { t } = useTranslation()
+
   return (
     <>
       <SEO
