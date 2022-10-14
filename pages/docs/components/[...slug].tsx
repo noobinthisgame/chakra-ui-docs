@@ -2,7 +2,6 @@ import { MDXComponents } from 'components/mdx-components'
 import ComponentDocsLayout from 'layouts/component'
 import { GetStaticPaths, GetStaticProps, InferGetStaticPropsType } from 'next'
 import { useMDXComponent } from 'next-contentlayer/hooks'
-import { useRouter } from 'next/router'
 import * as React from 'react'
 import {
   getComponentTabsData,
@@ -23,10 +22,7 @@ export default function Page({
   )
 }
 
-export const getStaticPaths: GetStaticPaths = async ({
-  locales,
-  defaultLocale,
-}) => {
+export const getStaticPaths: GetStaticPaths = async ({ locales }) => {
   const paths = locales.flatMap((locale) =>
     getDocByType('components').flatMap((doc) => {
       return { params: { slug: doc.slug.split('/').slice(4) }, locale }
